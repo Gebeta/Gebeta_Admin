@@ -24,7 +24,7 @@ export default{
     },
     methods:{
         async getAddress(lat, lng){
-            const res =  await fetch('https://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+lng+'&sensor=true&key=', {
+            const res =  await fetch('https://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+lng+'&sensor=true', {
                 method: 'GET',
             })
             const data = await res.json()
